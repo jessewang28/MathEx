@@ -3,8 +3,10 @@ package com.company;
 public class MathEx {
 
     public static void main(String[] args) {
-        int x = swap(156);      //integer switch
-        System.out.print(x);
+        int x = swap(123);      //Integer Switch
+        System.out.println(x);
+
+        timeLeft(1,34,8,20);                      //Train Time
 
     }
 
@@ -21,10 +23,21 @@ public class MathEx {
             return a;
         }
 
-        public static int timeLeft((int) curHour, curMin, depHour, depMin);
+        public static int timeLeft( int curHour, int curMin, int depHour, int depMin)
         {
-            curHour = 
-
+                            //time variables
+            int hours1;         //curHour in minutes
+            int hours2;         //depHour in minutes
+            int b;              //total difference in minutes
+            int c;              //hours difference
+            int e;              //minutes difference
+            hours1 = curHour*60;
+            hours2 = depHour*60;
+            b = (hours2 + depMin) - (hours1 + curMin);
+            c = b/60;
+            e = b%60;
+            System.out.print(c + " hours " + e + " mins ");
+            return 0;
 
         }
 }

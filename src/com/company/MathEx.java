@@ -3,20 +3,27 @@ package com.company;
 public class MathEx {
 
     public static void main(String[] args) {
+        int x = swap(156);      //integer switch
+        System.out.print(x);
 
     }
-	    public void swap(int x)
+
+        public static int swap(int x)
         {
-            if (x>100)
-            {
-                int y=x%10;
-                int z=x%100;
-                System
-            }
-            int y = x%100;
-            int z = x%1000;
+            int a;
+            int b=x/100;   //hundreds digit
+            b=b*100;
+            int c=x%10;   //tens digit
+            c=c*10;
+            int d=x%100;   //ones digit
+            d = d/10;
+            a = b + c + d;   //final digit
+            return a;
+        }
 
-
+        public static int timeLeft((int) curHour, curMin, depHour, depMin);
+        {
+            curHour = 
 
 
         }

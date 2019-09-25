@@ -42,9 +42,9 @@ public class MathEx {
 
         }
 
-        public static int dayOfWeek()
+        public static int dayOfWeek(int day, int date)
         {
-
+        
 
         }
 

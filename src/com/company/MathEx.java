@@ -14,12 +14,19 @@ public class MathEx {
 
         timeLeft(1, 34, 8, 20);   //Train Time
 
-        dayOfWeek(0,1);          //Calender
-        dayOfWeek(0,14);
-        dayOfWeek(6,22);
-        dayOfWeek(5,4);
-        dayOfWeek(1,24);
-        dayOfWeek(2,1);
+
+        int a = dayOfWeek(0,1);          //Calender
+        System.out.println(a);
+        int b = dayOfWeek(0,14);
+        System.out.println(b);
+        int c = dayOfWeek(6,22);
+        System.out.println(c);
+        int d = dayOfWeek(5,4);
+        System.out.println(d);
+        int e = dayOfWeek(1,24);
+        System.out.println(e);
+        int f = dayOfWeek(2,1);
+        System.out.println(f);
 
     }
 
@@ -36,7 +43,7 @@ public class MathEx {
         return a;
         }
 
-        public static int timeLeft(int curHour, int curMin, int depHour, int depMin)
+        public static void timeLeft(int curHour, int curMin, int depHour, int depMin)
         {
         //time variables
         int hours1;         //curHour in minutes
@@ -49,8 +56,7 @@ public class MathEx {
         b = (hours2 + depMin) - (hours1 + curMin);
         c = b / 60;
         e = b % 60;
-        System.out.println(c + " hours " + e + " mins ");
-        return 0;
+        System.out.println(c + " hours " + e + " minutes ");
 
         }
 
@@ -58,8 +64,7 @@ public class MathEx {
         {
             int a = day + date - 1;     //gives the integer a, which is the total number of days past plus how far into the week we already in accordance to the 1st day// ; the minus one accounts for Sunday being equal to 0
             a = a%7;                    //divided by 7 to get remainder. the rest are full weeks so they don't matter
-            System.out.println(a);
-            return 0;
+            return a;
         }
 
 }

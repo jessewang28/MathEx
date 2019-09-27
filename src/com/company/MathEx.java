@@ -9,6 +9,7 @@ public class MathEx {
 
         timeLeft(1, 34, 8, 20);                      //Train Time
 
+        dayOfWeek(0,22);                    //Calender
         }
 
         public static int swap(int x)
@@ -44,7 +45,7 @@ public class MathEx {
 
         public static int dayOfWeek(int day, int date)
         {
-        
+            int a = (date%7) - 1 + day;
 
         }
 
